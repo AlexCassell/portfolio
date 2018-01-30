@@ -1,0 +1,248 @@
+/* 
+CSS by Alex Cassell
+http://alexcassell.com
+*/
+.underconstruction{
+    font-size: 2em;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 15;
+    background: red;
+    border-radius: 25px;
+}
+
+/* @font-face {
+    font-family: EnchantedLand;
+    src: url(../fonts/EnchantedLand.otf);
+} */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: #A5CC6B; */
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes titleSlide {
+    0%   {left:0px; top:200px;}
+    100%  {left:40%; top:200px;}
+}
+
+/* Standard syntax */
+@keyframes titleSlide {
+    0%   {left:0px; top:200px;}
+    100%  {left:40%; top:200px;}
+}
+
+.about__tagHolder{
+    position: absolute;
+}
+
+
+
+@media screen and (min-device-height : 801px)
+{
+
+    .mainStructure{
+        position: absolute;
+        height: 1100px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .topGraphic__title{
+        width: 50%;
+        height: 300px;
+        color: #AA7439;
+        font-size: 4vw;
+        position: relative;
+        -webkit-animation-fill-mode: forwards; 
+        animation-fill-mode: forwards;
+        -webkit-animation-name: titleSlide; 
+        -webkit-animation-duration: 4s;
+        -webkit-animation-iteration-count: 3;
+        animation-name: titleSlide;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+/* main structure after state change */
+    /* .mainStructureState{
+        height: 1100px;
+        width: 100%;
+        background-color: #A5CC6B;
+        width: 100%;
+    } */
+
+    .topGraphic__titleState{
+        width: 50%;
+        height: 300px;
+        color: #AA7439;
+        font-size: 4vw;
+        position: relative;
+    }
+
+
+
+    .topGraphic__graphicDivider{
+        background-color: black;
+        position: absolute;
+        top:calc(100% + 75px);
+        height: 40%;
+        width: 100%;
+        background-image: url("../images/topgraphic.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-transform: translateZ(-999px) scale(1.5);
+        transform: translateZ(-999px) scale(1.5);
+        z-index: 3;
+    }
+
+
+    
+    .topGraphic__title__subTitle {
+        font-size: 1em;
+    }
+
+    .downArrows{
+        position: absolute;
+        bottom: 150px;
+        left: calc(50% - 50px);
+        animation: shake 0.5s;
+        animation-iteration-count: infinite; 
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    .topGraphic__scroll{
+        top:200px;
+        left: 40%;
+    }
+
+
+
+    .about__graphicDivider{
+        position: absolute;
+        background-color: #5d94aa;
+        top:calc(240% + 200px);
+        height: 40%;
+        width: 100%;
+        background-image: url("../images/about.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-transform: translateZ(-999px) scale(1.5);
+        transform: translateZ(-999px) scale(1.5);
+        z-index: 3;
+    }
+}
+
+
+/* only use this in states below home area */
+/* .button__scrollToTop{
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    height:100px;
+    width: 100px;
+    background: none;
+    border: solid 3px white;
+    opacity: 0.5;
+    z-index: 15;
+    outline: none;
+    color: black;
+}
+.button_scrollToTop__text {
+    position: relative;
+    top: -25px;
+    font-size: 6rem;
+}
+.button__scrollToTop:active, button__scrollToTo:focus{
+    outline:0;
+} */
+/* input::-moz-focus-inner { 
+    border: 0;
+}
+
+.button__scrollToTop:hover, button__scrollToTop:active, button__scrollToTop:focus {
+    border:solid 3px #8F305B;
+    color: #8F305B;
+} */
+
+.socialMedia{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+    top: 35%;
+    z-index: 15;
+}
+
+.socialMedia__icons{
+    cursor: grab;
+    height:100px;
+    width: 100px;
+    padding-top: 15px;
+    background: none;
+    outline: none;
+    border:none;
+    position: relative;
+    -webkit-animation: easeIn 2s;
+    animation: easeIn 2s;
+    -webkit-transform: scale(0,0); 
+    transform: scale(0,0);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+}
+
+.socialMedia__icons__hover{
+    height:100px;
+    width: 100px;
+    padding-top: 15px;
+    background: none;
+    outline: none;
+    border:none;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+@-webkit-keyframes easeIn {
+    100% {
+        -webkit-transform: scale(1,1);
+    }
+}
+
+@keyframes easeIn {
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+socialMedia__icons__hover:hover { 
+    transform: scale(1.2);
+}
+
+
+
+/* '../images/socialMedia/github.png */
+

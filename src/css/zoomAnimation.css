@@ -1,0 +1,108 @@
+body{
+    overflow: hidden;
+}
+
+.wrapper{
+    position: absolute;
+    top: 0px;
+    width:100%;
+    height: 100%;
+}
+
+.background__initial{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/zoomOut/forestBackgrounds/1.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background__second{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/zoomOut/forestBackgrounds/2.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background__third{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/zoomOut/frame/1.jpg');
+    background-repeat: no-repeat;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background__fourth{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/zoomOut/frame/2.jpeg');
+    background-repeat: no-repeat;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lumberJack__initial{
+    position: absolute;
+    bottom: -400px;
+    height: 1000px;
+    width: 1000px;
+    background-image: url('../images/zoomOut/lumberjack.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.lumberJack__second{
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+    height: 500px;
+    width: 500px;
+    z-index: 15;
+    background-image: url('../images/zoomOut/lumberjack.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.rocks{
+    position: absolute;
+    bottom: -300px;
+    height: 385px;
+    width: 100%;
+    z-index: 1;
+    background-image: url('../images/zoomOut/rockledge.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
